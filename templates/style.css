@@ -1,0 +1,99 @@
+body {
+  animation: pageAnimation 1s ease-out;
+  background-color: hsl(65, 65%, 97%);
+}
+
+@keyframes pageAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65px;
+    padding-left: 480px;
+
+    
+
+    
+}
+
+.searchbtn{
+    background-color: rgb(31, 95, 232);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: left;
+    width: 80px;
+    height: 30px;
+}
+
+
+
+
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+    gap: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    
+}
+
+
+.card-body{
+    border: 2px solid rgb(253, 51, 51);
+    padding: 20px;
+    box-shadow: 4px 2px 4px #e638381a;
+    width: 28%;
+    height: 650x;
+    width: 450px;
+   
+}
+
+
+.nav-item{  
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text-header{
+
+    font-size: 20px;  
+    font-weight: bold;
+    color: lab(85.62% 3.42 30.28 / 0.921);
+    text-align: center;
+
+}
+
+.header{
+    background-color: rgb(31, 95, 232);
+    padding: 20px;
+    border: 2px solid rgb(253, 51, 51);;
+    border-radius: 60px;
+    height: 60px;
+}
+
+.hub{
+    color: hsl(0, 52%, 55%;
+}
+
