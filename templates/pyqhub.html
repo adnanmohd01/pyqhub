@@ -4,192 +4,73 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PYQs HUB</title>
+    <title>PYQs HUB - Invertis University</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-    <header class="header">
-        <h4 class="text-header"> --- INVERTIS UNIVERSITY <span>PYQs HUB --- </span></h4>
-    </header>
+    {% include 'components/nav.html' %}
 
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100">
-
-                    <li class="nav-item">
-                        <img src="C:\Users\Laptop\Downloads\WhatsApp Image 2026-08-27 at 3.15.05 PM.jpeg" alt="PYQs Hub Logo"
-                            class="nav-logo">
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="pyqhub.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="studyreso.html">Study Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="help.html">Help</a>
-                    </li>
-
-                    <form class="d-flex nav-search" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button type="button" class="searchbtn btn-lg btn-primary" disabled>➜</button>
-                    </form>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <img src="C:\Users\Laptop\Downloads\invertisuniversity_cover.jpeg" class="cover-img"
+    <img src="{{ url_for('static', filename='images/invertis_cover.jpeg') }}" class="cover-img"
         alt="Invertis University Cover">
 
-
-
-
     <div class="cards">
-
         <div class="card-body">
-            <img src="C:\Users\Laptop\Downloads\ChatGPT Image Aug 27, 2026, 11_36_45 AM.png" class="card-img-top"
-                alt="...">
+            <img src="{{ url_for('static', filename='images/course_cse.png') }}" class="card-img-top"
+                alt="B.Tech Question Papers">
             <h5 class="card-title">B.Tech</h5>
             <p class="card-text">Access previous year question papers (PYQs) for B.Tech courses and prepare effectively
-                for your exams.
-                Practice important questions and understand the exam pattern easily.</p>
-            <a href="btech.html" class="btn btn-primary">Get Quesion Papers</a>
+                for your exams. Practice important questions and understand the exam pattern easily.</p>
+            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
         </div>
 
         <div class="card-body">
-            <img src="C:\Users\Laptop\Downloads\ChatGPT Image Aug 27, 2026, 11_36_54 AM.png" class="card-img-top"
-                alt="...">
+            <img src="{{ url_for('static', filename='images/course_it.png') }}" class="card-img-top"
+                alt="BBA Question Papers">
             <h5 class="card-title">BBA</h5>
             <p class="card-text">Access previous year question papers (PYQs) for BBA courses and prepare effectively for
-                your exams.
-                Practice important questions and understand the exam pattern easily.</p>
-            <a href="#" class="btn btn-primary">Get Quesion Papers</a>
+                your exams. Practice important questions and understand the exam pattern easily.</p>
+            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
         </div>
 
         <div class="card-body">
-            <img src="C:\Users\Laptop\Downloads\ChatGPT Image Aug 27, 2026, 11_42_06 AM.png" class="card-img-top"
-                alt="...">
-
+            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
+                alt="BCA Question Papers">
             <h5 class="card-title">BCA</h5>
             <p class="card-text">Access previous year question papers (PYQs) for BCA courses and prepare effectively for
-                your exams.
-                Practice important questions and understand the exam pattern easily.</p>
-            <a href="#" class="btn btn-primary">Get Quesion Papers</a>
-        </div>
-
-
-        <div class="card-body">
-            <img src="C:\Users\Laptop\Downloads\ChatGPT Image Aug 27, 2026, 11_42_06 AM.png" class="card-img-top"
-                alt="...">
-
-            <h5 class="card-title">BCA</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for BCA courses and prepare effectively for
-                your exams.
-                Practice important questions and understand the exam pattern easily.</p>
-            <a href="#" class="btn btn-primary">Get Quesion Papers</a>
+                your exams. Practice important questions and understand the exam pattern easily.</p>
+            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
         </div>
 
         <div class="card-body">
-            <img src="C:\Users\Laptop\Downloads\ChatGPT Image Aug 27, 2026, 11_42_06 AM.png" class="card-img-top"
-                alt="...">
-
-            <h5 class="card-title">BCA</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for BCA courses and prepare effectively for
-                your exams.
-                Practice important questions and understand the exam pattern easily.</p>
-            <a href="#" class="btn btn-primary">Get Quesion Papers</a>
+            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
+                alt="MBA Question Papers">
+            <h5 class="card-title">MBA</h5>
+            <p class="card-text">Access previous year question papers (PYQs) for MBA courses and prepare effectively for
+                your exams. Practice important questions and understand the exam pattern easily.</p>
+            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
         </div>
 
-
-
+        <div class="card-body">
+            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
+                alt="B.Sc Question Papers">
+            <h5 class="card-title">B.Sc</h5>
+            <p class="card-text">Access previous year question papers (PYQs) for B.Sc courses and prepare effectively for
+                your exams. Practice important questions and understand the exam pattern easily.</p>
+            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
+        </div>
     </div>
-
-    </div>
-    <hr>
-
-
 
     <hr>
 
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <!-- About -->
-            <div class="footer-about">
-                <h2>PYQs HUB</h2>
-                <p>Your Smart Way to Past Papers</p>
-
-                <p>
-                    Access previous year question papers and
-                    useful academic resources in one place.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <a href="index.html">Home</a>
-                <a href="pyqs.html">PYQs</a>
-                <a href="resources.html">Resources</a>
-                <a href="about.html">About Us</a>
-            </div>
-
-            <!-- Courses -->
-            <div class="footer-links">
-                <h3>Courses</h3>
-                <a href="btech.html">B.Tech</a>
-                <a href="bba.html">BBA</a>
-                <a href="bca.html">BCA</a>
-            </div>
-
-            <!-- Support -->
-            <div class="footer-links">
-                <h3>Support</h3>
-                <a href="contact.html">Contact Us</a>
-                <a href="faq.html">FAQs</a>
-                <a href="feedback.html">Feedback</a>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="footer-bottom">
-            <p>© 2026 PYQs Hub | All Rights Reserved</p>
-            <p>Made for Students, Built for Success.</p>
-        </div>
-
-    </footer>
-
-
+    {% include 'components/footer.html' %}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
 </html>
