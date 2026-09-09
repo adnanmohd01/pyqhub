@@ -1,0 +1,47 @@
+<!-- Floating Chat Widget -->
+<div class="chat-widget-container" id="chatWidgetContainer">
+    <!-- Chat Trigger Button -->
+    <button type="button" class="chat-toggle-btn" id="chatToggleBtn" aria-label="Open Chat" title="Chat with PYQs Hub Assistant">
+        <span id="chatIcon">💬</span>
+        <span class="chat-badge" title="Online"></span>
+    </button>
+
+    <!-- Chat Screen / Window -->
+    <div class="chat-window" id="chatWindow" role="dialog" aria-modal="true" aria-label="PYQs Hub Chat Assistant">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🎓</div>
+                <div class="chat-title-wrap">
+                    <h4>PYQs Hub Assistant</h4>
+                    <p class="chat-status"><span class="status-dot"></span> Online • Ready to help</p>
+                </div>
+            </div>
+            <button type="button" class="chat-close-btn" id="chatCloseBtn" aria-label="Close Chat">✕</button>
+        </div>
+
+        <!-- Body -->
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg bot">
+                <div class="msg-bubble">
+                    👋 <strong>Hello!</strong> Welcome to <strong>PYQs HUB</strong>.<br>
+                    How can I assist you with past question papers, notes, or course details today?
+                </div>
+                <span class="msg-time">Just now</span>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="chat-typing-indicator" id="chatTypingIndicator">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+        </div>
+
+        <!-- Input Footer -->
+        <form class="chat-footer" id="chatForm">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask a question..." autocomplete="off" required>
+            <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Send Message">➤</button>
+        </form>
+    </div>
+</div>
