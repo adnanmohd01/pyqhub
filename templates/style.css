@@ -1,36 +1,36 @@
 body {
-  animation: pageAnimation 1s ease-out;
-  background-color: hsl(65, 65%, 97%);
+    animation: pageAnimation 1s ease-out;
+    background-color: hsl(65, 65%, 97%);
 }
 
 @keyframes pageAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 
-.d-flex{
+.d-flex {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 65px;
-    padding-left: 480px;
+    padding-left: 470px;
 
-    
 
-    
+
+
 }
 
-.searchbtn{
-    background-color: rgb(31, 95, 232);
+.searchbtn {
+    background-color: #ff7a00;
     color: white;
     border: none;
     border-radius: 50px;
@@ -45,55 +45,61 @@ body {
 
 
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 65px;
-    margin-right: 65px;
-    gap: 100px;
-    flex-wrap: wrap;
-    gap: 20px;
 
-    
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 50px;
+
+
+
 }
 
 
-.card-body{
-    border: 2px solid rgb(253, 51, 51);
+.card-body {
     padding: 20px;
-    box-shadow: 4px 2px 4px #e638381a;
+    box-shadow: 4px 5px 4px hwb(204 11% 66% / 0.102);
     width: 28%;
     height: 650x;
     width: 450px;
-   
+
+}
+
+.navbar{
+    height: 60px;
 }
 
 
-.nav-item{  
+.nav-item {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.text-header{
+.text-header {
 
-    font-size: 20px;  
+    font-size: 20px;
     font-weight: bold;
-    color: lab(85.62% 3.42 30.28 / 0.921);
+    color: white;
     text-align: center;
 
 }
 
-.header{
-    background-color: rgb(31, 95, 232);
+.text-header span {
+    color: #ff7a00;
+}
+
+.header {
+    background: linear-gradient(135deg, #061a40, #0b3d91);
     padding: 20px;
-    border: 2px solid rgb(253, 51, 51);;
-    border-radius: 60px;
+    border: 2px solid #ff7a00;
     height: 60px;
 }
-
-.hub{
-    color: hsl(0, 52%, 55%;
+.header-position{
+    position: fixed;
 }
 
+.hub {
+    color: whitesmoke;
+}
