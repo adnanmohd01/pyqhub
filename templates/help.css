@@ -1,0 +1,192 @@
+/* Help Hero */
+
+.help-hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #061a40, #0b3d91);
+    color: white;
+}
+
+.help-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.help-hero p {
+    font-size: 18px;
+    color: #ddd;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* Search */
+
+.help-search {
+    display: flex;
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.help-search input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px 0 0 8px;
+}
+
+.help-search button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #ff7a00;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+
+/* Help Section */
+
+.help-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.help-section h2,
+.faq-section h2 {
+    color: #061a40;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* Help Cards */
+
+.help-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.help-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.help-card:hover {
+    transform: translateY(-8px);
+}
+
+.help-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.help-card h3 {
+    color: #061a40;
+    margin-bottom: 12px;
+}
+
+.help-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.help-card a {
+    color: #ff7a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    padding: 60px 8%;
+    background-color: #f5f7fb;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq {
+    background-color: white;
+    padding: 22px 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq h3 {
+    color: #061a40;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Contact Help */
+
+.contact-help {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.contact-help h2 {
+    color: #061a40;
+    font-size: 32px;
+}
+
+.contact-help p {
+    color: #666;
+    margin: 15px 0 25px;
+}
+
+.contact-help a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff7a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .help-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .help-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .help-hero h1 {
+        font-size: 32px;
+    }
+
+    .help-search {
+        width: 100%;
+    }
+}
