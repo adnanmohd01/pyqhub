@@ -1,0 +1,80 @@
+{
+  "courses": [
+    "B.Tech",
+    "BBA",
+    "BCA"
+  ],
+  "resources": [
+    {
+      "id": "lecture-notes",
+      "icon": "📚",
+      "title": "Lecture Notes",
+      "description": "Access useful lecture notes and study material for better understanding.",
+      "endpoint": null,
+      "link": "#",
+      "button_text": "View Resources →"
+    },
+    {
+      "id": "ebooks",
+      "icon": "📖",
+      "title": "E-Books",
+      "description": "Explore useful e-books and reference material for your subjects.",
+      "endpoint": null,
+      "link": "#",
+      "button_text": "View Books →"
+    },
+    {
+      "id": "important-questions",
+      "icon": "📝",
+      "title": "Important Questions",
+      "description": "Practice important questions and focus on topics for your examinations.",
+      "endpoint": null,
+      "link": "#",
+      "button_text": "Practice Now →"
+    },
+    {
+      "id": "pyqs",
+      "icon": "📄",
+      "title": "Previous Year Papers",
+      "description": "Find previous year question papers and understand the examination pattern.",
+      "endpoint": "btech",
+      "link": null,
+      "button_text": "View PYQs →"
+    },
+    {
+      "id": "video-lectures",
+      "icon": "🎥",
+      "title": "Video Lectures",
+      "description": "Learn difficult concepts through useful and informative video lectures.",
+      "endpoint": null,
+      "link": "#",
+      "button_text": "Watch Videos →"
+    },
+    {
+      "id": "syllabus",
+      "icon": "📋",
+      "title": "Syllabus",
+      "description": "Check your complete course syllabus and plan your preparation accordingly.",
+      "endpoint": null,
+      "link": "#",
+      "button_text": "View Syllabus →"
+    }
+  ],
+  "recent_resources": [
+    {
+      "course": "B.Tech",
+      "title": "Data Structures Notes",
+      "link": "#"
+    },
+    {
+      "course": "BBA",
+      "title": "Marketing Management Notes",
+      "link": "#"
+    },
+    {
+      "course": "BCA",
+      "title": "Java Programming Notes",
+      "link": "#"
+    }
+  ]
+}

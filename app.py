@@ -1,13 +1,34 @@
+import json
+import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
 app.secret_key = "invertis-pyqs-hub-secret-key"
 
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+
+def load_courses():
+    json_path = os.path.join(DATA_DIR, "courses.json")
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
+def load_study_resources():
+    json_path = os.path.join(DATA_DIR, "study_resources.json")
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"courses": [], "resources": [], "recent_resources": []}
+
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("pyqhub.html")
+    cards = load_courses()
+    return render_template("pyqhub.html", cards=cards)
 
 
 @app.route("/about")
@@ -23,7 +44,13 @@ def btech():
 @app.route("/study-resources")
 @app.route("/studyreso")
 def study_resources():
-    return render_template("studyreso.html")
+    data = load_study_resources()
+    return render_template(
+        "studyreso.html",
+        resources=data.get("resources", []),
+        recent_resources=data.get("recent_resources", []),
+        courses=data.get("courses", []),
+    )
 
 
 @app.route("/contact", methods=["GET", "POST"])

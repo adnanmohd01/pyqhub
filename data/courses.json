@@ -1,0 +1,42 @@
+[
+  {
+    "id": "btech",
+    "title": "B.Tech",
+    "image": "images/course_cse.png",
+    "description": "Access previous year question papers (PYQs) for B.Tech courses and prepare effectively for your exams. Practice important questions and understand the exam pattern easily.",
+    "endpoint": "btech",
+    "button_text": "Get Question Papers"
+  },
+  {
+    "id": "bba",
+    "title": "BBA",
+    "image": "images/course_it.png",
+    "description": "Access previous year question papers (PYQs) for BBA courses and prepare effectively for your exams. Practice important questions and understand the exam pattern easily.",
+    "endpoint": "btech",
+    "button_text": "Get Question Papers"
+  },
+  {
+    "id": "bca",
+    "title": "BCA",
+    "image": "images/course_general.png",
+    "description": "Access previous year question papers (PYQs) for BCA courses and prepare effectively for your exams. Practice important questions and understand the exam pattern easily.",
+    "endpoint": "btech",
+    "button_text": "Get Question Papers"
+  },
+  {
+    "id": "mba",
+    "title": "MBA",
+    "image": "images/course_general.png",
+    "description": "Access previous year question papers (PYQs) for MBA courses and prepare effectively for your exams. Practice important questions and understand the exam pattern easily.",
+    "endpoint": "btech",
+    "button_text": "Get Question Papers"
+  },
+  {
+    "id": "bsc",
+    "title": "B.Sc",
+    "image": "images/course_general.png",
+    "description": "Access previous year question papers (PYQs) for B.Sc courses and prepare effectively for your exams. Practice important questions and understand the exam pattern easily.",
+    "endpoint": "btech",
+    "button_text": "Get Question Papers"
+  }
+]

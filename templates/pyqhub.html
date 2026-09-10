@@ -17,50 +17,15 @@
         alt="Invertis University Cover">
 
     <div class="cards">
+        {% for card in cards %}
         <div class="card-body">
-            <img src="{{ url_for('static', filename='images/course_cse.png') }}" class="card-img-top"
-                alt="B.Tech Question Papers">
-            <h5 class="card-title">B.Tech</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for B.Tech courses and prepare effectively
-                for your exams. Practice important questions and understand the exam pattern easily.</p>
-            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
+            <img src="{{ url_for('static', filename=card.image) }}" class="card-img-top"
+                alt="{{ card.title }} Question Papers">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.description }}</p>
+            <a href="{{ url_for(card.endpoint) if card.endpoint else '#' }}" class="btn btn-primary">{{ card.button_text }}</a>
         </div>
-
-        <div class="card-body">
-            <img src="{{ url_for('static', filename='images/course_it.png') }}" class="card-img-top"
-                alt="BBA Question Papers">
-            <h5 class="card-title">BBA</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for BBA courses and prepare effectively for
-                your exams. Practice important questions and understand the exam pattern easily.</p>
-            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
-        </div>
-
-        <div class="card-body">
-            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
-                alt="BCA Question Papers">
-            <h5 class="card-title">BCA</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for BCA courses and prepare effectively for
-                your exams. Practice important questions and understand the exam pattern easily.</p>
-            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
-        </div>
-
-        <div class="card-body">
-            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
-                alt="MBA Question Papers">
-            <h5 class="card-title">MBA</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for MBA courses and prepare effectively for
-                your exams. Practice important questions and understand the exam pattern easily.</p>
-            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
-        </div>
-
-        <div class="card-body">
-            <img src="{{ url_for('static', filename='images/course_general.png') }}" class="card-img-top"
-                alt="B.Sc Question Papers">
-            <h5 class="card-title">B.Sc</h5>
-            <p class="card-text">Access previous year question papers (PYQs) for B.Sc courses and prepare effectively for
-                your exams. Practice important questions and understand the exam pattern easily.</p>
-            <a href="{{ url_for('btech') }}" class="btn btn-primary">Get Question Papers</a>
-        </div>
+        {% endfor %}
     </div>
 
     <hr>
